@@ -11,17 +11,60 @@
 </head>
 
 <body>
-    <div>
-        <nav>
+    <div class="flex flex-col w-screen h-screen bg-blue-200">
+        <nav class="flex items-center px-5 h-16 bg-white">
+            <!-- Logo Link -->
+            <a href="#" class="w-8 h-8 cursor-pointer">
+                <img src="img/logo.svg" alt="logo">
+            </a>
+            <!-- Input Search -->
+            <input class="ml-10 h-10 p-4 rounded-full bg-gray-200 focus:outline-none focus:ring" type="text"
+                name="search" id="search" placeholder="Search for anything">
 
+            <!-- Menu List -->
+            <ul class="flex justify-between ml-10 font-medium">
+                <li>
+                    <a href="#" class="mx-2 text-blue-600">Project</a>
+                </li>
+                <li>
+                    <a href="#" class="mx-2 text-gray-600 hover:text-blue-600">Team</a>
+                </li>
+                <li>
+                    <a href="#" class="mx-2 text-gray-600 hover:text-blue-600">Activity</a>
+                </li>
+            </ul>
+
+            <!-- New Issue Button -->
+            <a href="#"
+                class="ml-auto flex justify-center bg-green-800 hover:bg-green-600 p-2 text-white rounded-md">New
+                Issue</a>
+
+            <!-- User Profile link -->
+            <a href="#" class="flex justify-center ml-10 w-8 h-8 rounded-md overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                    alt="user-1">
+            </a>
         </nav>
 
-        <header>
-
+        <header class="p-2 m-4">
+            <h1 class="text-2xl font-bold">Team Project Board</h1>
         </header>
 
-        <main>
-
+        <main class="flex h-full">
+            <div class="m-4 w-72 bg-gray-100 rounded-md">
+                <h3 class="p-2">Backlog</h3>
+            </div>
+            <div class="m-4 w-72 bg-gray-100 rounded-md">
+                <h3 class="p-2">
+                    In Progress
+                </h3>
+            </div>
+            <div class="m-4 w-72 bg-gray-100 rounded-md">
+                <h3 class="p-2">Review</h3>
+            </div>
+            <div class="m-4 w-72 bg-gray-100 rounded-md">
+                <h3 class="p-2">Done</h3>
+            </div>
         </main>
     </div>
 </body>
