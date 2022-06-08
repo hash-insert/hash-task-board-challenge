@@ -11,20 +11,51 @@
 </head>
 
 <body class="bg-blue-300">
-    <div >
-        <nav class="flex p-2 bg-yellow-300">
+    <div class="flex flex-col w-screen h-screen" >
+        <nav class="flex px-10 max-h-10  bg-white items-center cursor-pointer">
+            <img src="img/logo.svg" class="w-6 h-9 m-1">
+            <div class=" pl-16 " >
+            <input type="text"  class=" box-border rounded-2xl p-1 bg-blue-200" placeholder="Search for anything">
+            </div>
+            <div class="flex pl-16">
+                <ul class="flex justify-between">
+                <li class=" p-3 font-bold  hover:text-blue-900"><a href="#">Project</a></li>
+               <li class="p-3 font-bold  hover:text-blue-900"><a href="#">Team</a></li>
+                <li class="p-3 font-bold  hover:text-blue-900"><a href="#">Activity</a></li>
+                </ul>
+             </div>
+             <div class="flex ml-auto">
+                    <button class="rounded-md  p-1 bg-black text-white float-right hover:bg-blue-300 overflow-hidden "> New issue</button></div>
+                <div class=" flex w-6 h-9 ml-6">
+                    <img  class=" flex rounded-full"src="img/photo-1633332755192-727a05c4013d.avif">
+                </div>
+
+            
 
         </nav>
 
-        <header class="bg-blue-200 p-2 flex m-4">
+        <header class= "p-2 flex m-4 font-bold text-lg">
+            <h1>Team Project Board.</h1>
 
         </header>
 
-        <main class="flex m-2">
-            <div class="flex bg-blue-50 w-40 h-screen m-4 rounded"></div>
-            <div class="flex bg-blue-50 w-40 h-screen m-4 rounded"></div>
-            <div class="flex bg-blue-50 w-40 h-screen m-4 rounded"></div>
-            <div class="flex bg-blue-50 w-40 h-screen m-4 rounded"></div>
+        <main class="flex h-full">
+            <div class="flex bg-gray-100 w-5/12  m-5 rounded">
+                <h2 class="font-bold">Backlog</h2>
+
+                <div class=" flex flex-row m-7 bg-yellow-300 w-5/6 h-20">
+                    
+                </div>
+            </div>
+            <div class="flex bg-gray-100 w-5/12  m-5 rounded">
+                <h2 class="font-bold">In Progress</h2>
+            </div>
+            <div class="flex bg-gray-100 w-5/12  m-5 rounded">
+                <h2 class="font-bold">Ready for Review</h2>
+            </div>
+            <div class="flex bg-gray-100 w-5/12  m-5 rounded">
+                <h2 class="font-bold">Done</h2>
+            </div>
 
         </main>
     </div>
