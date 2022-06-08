@@ -11,52 +11,242 @@
 </head>
 
 <body class="bg-blue-300">
-    <div class="flex flex-col w-screen h-screen" >
+    <div class="flex flex-col w-screen h-screen">
         <nav class="flex px-10 max-h-10  bg-white items-center cursor-pointer">
             <img src="img/logo.svg" class="w-6 h-9 m-1">
-            <div class=" pl-16 " >
-            <input type="text"  class=" box-border rounded-2xl p-1 bg-blue-200" placeholder="Search for anything">
+            <div class=" pl-16 ">
+                <input type="text" class=" box-border rounded-2xl p-1 bg-blue-200" placeholder="Search for anything">
             </div>
             <div class="flex pl-16">
                 <ul class="flex justify-between">
-                <li class=" p-3 font-bold  hover:text-blue-900"><a href="#">Project</a></li>
-               <li class="p-3 font-bold  hover:text-blue-900"><a href="#">Team</a></li>
-                <li class="p-3 font-bold  hover:text-blue-900"><a href="#">Activity</a></li>
+                    <li class=" p-3 font-bold  hover:text-blue-900"><a href="#">Project</a></li>
+                    <li class="p-3 font-bold  hover:text-blue-900"><a href="#">Team</a></li>
+                    <li class="p-3 font-bold  hover:text-blue-900"><a href="#">Activity</a></li>
                 </ul>
-             </div>
-             <div class="flex ml-auto">
-                    <button class="rounded-md  p-1 bg-black text-white float-right hover:bg-blue-300 overflow-hidden "> New issue</button></div>
-                <div class=" flex w-6 h-9 ml-6">
-                    <img  class=" flex rounded-full"src="img/photo-1633332755192-727a05c4013d.avif">
-                </div>
+            </div>
+            <div class="flex ml-auto">
+                <button class="rounded-md  p-1 bg-black text-white  hover:bg-blue-300 overflow-hidden "> New
+                    issue</button>
+            </div>
+            <div class=" flex w-6 h-9 ml-6">
+                <img class=" flex rounded-full" src="img/photo-1633332755192-727a05c4013d.avif">
+            </div>
 
-            
+
 
         </nav>
 
-        <header class= "p-2 flex m-4 font-bold text-lg">
+<!-------------------------------------------- end of nav bar -->
+
+        <header class="p-2 flex m-4 font-bold text-lg">
             <h1>Team Project Board.</h1>
 
         </header>
+        <!-------------------------------------- end of header -->
 
-        <main class="flex h-full">
-            <div class="flex bg-gray-100 w-5/12  m-5 rounded">
-                <h2 class="font-bold">Backlog</h2>
+        <main class="flex h-full overflow-auto">
+            <div class=" bg-gray-100 w-120  m-5 rounded overflow-scroll flex-shrink-0">
+                <!-------------------------------------- backlog col -->
+                <h2 class="font-bold h-0 p-4">Backlog</h2>
 
-                <div class=" flex flex-row m-7 bg-yellow-300 w-5/6 h-20">
+                <div
+                    class="  flex-col ml-2.5 mt-10 bg-white w-max h-max rounded-md drop-shadow-md hover:drop-shadow-2xl ">
+                    <div class="flex justify-between">
+                        <p class="p-6 inline-block">Add discount code to <br> checkout page</p>
+                        <img class="  flex rounded-full w-10 h-9 mx-4 my-6 flex-row  relative"
+                            src="img/photo-1633332755192-727a05c4013d.avif">
+                    </div>
+                    <div>
+                        <p class="inline-flex ml-2 text-gray-400">sep 15</p>
+                        <a href="#"> <button
+                                class=" rounded-full bg-green-300 text-green-900 p-2 ml-20 mr-4 mb-4 hover:bg-green-200 ring-2">Feature
+                                request</button></a>
+                    </div>
+
+                </div>
+                <div
+                    class="  flex-col ml-2.5 mt-10 bg-white w-max h-max rounded-md drop-shadow-md hover:drop-shadow-2xl ">
+                    <div class="flex justify-between">
+                        <p class="p-6 inline-block">Add discount code to <br> checkout page</p>
+                        <img class="  flex rounded-full w-10 h-9 mx-4 my-6 flex-row  relative"
+                            src="img/photom1.avif">
+                    </div>
+                    <div>
+                        <p class="inline-flex ml-2 text-gray-400">sep 15</p>
+                        <a href="#"> <button
+                                class=" rounded-full bg-green-300 text-green-900 p-2 ml-20 mr-4 mb-4 hover:bg-green-200 ring-2">Feature
+                                request</button></a>
+                    </div>
+
+                </div>
+                <div
+                    class=" flex flex-col ml-2.5 mt-10 bg-white w-max h-max rounded-md drop-shadow-md hover:drop-shadow-2xl ">
+                    <div class="flex justify-between">
+                        <p class="p-6 inline-block">Add discount code to <br> checkout page</p>
+                        <img class="  flex rounded-full w-10 h-9 mx-4 my-6 flex-row  relative"
+                            src="img/photoO1.avif">
+                    </div>
+                    <div>
+                        <p class="inline-flex ml-2 text-gray-400">sep 15</p>
+                        <a href="#"> <button
+                                class=" rounded-full bg-green-300 text-green-900 p-2 ml-20 mr-4 mb-4 hover:bg-green-200 ring-2">Feature
+                                request</button></a>
+                    </div>
+
+                </div>
+                <div
+                    class=" flex flex-col ml-2.5 mt-10 bg-white w-max h-max rounded-md drop-shadow-md hover:drop-shadow-2xl ">
+                    <div class="flex justify-between">
+                        <p class="p-6 inline-block">Add discount code to <br> checkout page</p>
+                        <img class="  flex rounded-full w-10 h-9 mx-4 my-6 flex-row  relative"
+                            src="img/photow2.avif">
+                    </div>
+                    <div>
+                        <p class="inline-flex ml-2 text-gray-400">sep 15</p>
+                        <a href="#"> <button
+                                class=" rounded-full bg-green-300 text-green-900 p-2 ml-20 mr-4 mb-4 hover:bg-green-200 ring-2">Feature
+                                request</button></a>
+                    </div>
                     
+
                 </div>
             </div>
-            <div class="flex bg-gray-100 w-5/12  m-5 rounded">
-                <h2 class="font-bold">In Progress</h2>
-            </div>
-            <div class="flex bg-gray-100 w-5/12  m-5 rounded">
-                <h2 class="font-bold">Ready for Review</h2>
-            </div>
-            <div class="flex bg-gray-100 w-5/12  m-5 rounded">
-                <h2 class="font-bold">Done</h2>
-            </div>
+            <!-- --------------------------------------------------end of backlog -->
+            <div class=" bg-gray-100 w-120  m-5 rounded  flex-shrink-0">
+                <h2 class="font-bold h-0 p-4">In progress</h2>
+                <div
+                    class=" flex flex-col ml-2.5 mt-10 bg-white w-max h-max rounded-md drop-shadow-md hover:drop-shadow-2xl ">
+                    <div class="flex justify-between">
+                        <p class="p-6 inline-block">Add discount code to <br> checkout page</p>
+                        <img class="  flex rounded-full w-10 h-9 mx-4 my-6 flex-row  relative"
+                            src="img/photow1.avif">
+                    </div>
+                    <div>
+                        <p class="inline-flex ml-2 text-gray-400">sep 15</p>
+                        <a href="#"> <button
+                                class=" rounded-full bg-green-300 text-green-900 p-2 ml-20 mr-4 mb-4 hover:bg-green-200 ring-2">Feature
+                                request</button></a>
+                    </div>
 
+                </div>
+                <div
+                    class=" flex flex-col ml-2.5 mt-10 bg-white w-max h-max rounded-md drop-shadow-md hover:drop-shadow-2xl ">
+                    <div class="flex justify-between">
+                        <p class="p-6 inline-block">Add discount code to <br> checkout page</p>
+                        <img class="  flex rounded-full w-10 h-9 mx-4 my-6 flex-row  relative"
+                            src="img/photow2.avif">
+                    </div>
+                    <div>
+                        <p class="inline-flex ml-2 text-gray-400">sep 15</p>
+                        <a href="#"> <button
+                                class=" rounded-full bg-green-300 text-green-900 p-2 ml-20 mr-4 mb-4 hover:bg-green-200 ring-2">Feature
+                                request</button></a>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <!-- -----------------------------------end of progress col -->
+            <div class=" bg-gray-100 w-120  m-5 rounded  flex-shrink-0">
+                <h2 class="font-bold h-0 p-4">Ready for Review</h2>
+                <div
+                    class=" flex flex-col ml-2.5 mt-10 bg-white w-max h-max rounded-md drop-shadow-md hover:drop-shadow-2xl ">
+                    <div class="flex justify-between">
+                        <p class="p-6 inline-block">Add discount code to <br> checkout page</p>
+                        <img class="  flex rounded-full w-10 h-9 mx-4 my-6 flex-row  relative"
+                            src="img/photoO1.avif">
+                    </div>
+                    <div>
+                        <p class="inline-flex ml-2 text-gray-400">sep 15</p>
+                        <a href="#"> <button
+                                class=" rounded-full bg-green-300 text-green-900 p-2 ml-20 mr-4 mb-4 hover:bg-green-200 ring-2">Feature
+                                request</button></a>
+                    </div>
+
+                </div>
+                <div
+                    class=" flex flex-col ml-2.5 mt-10 bg-white w-max h-max rounded-md drop-shadow-md hover:drop-shadow-2xl ">
+                    <div class="flex justify-between">
+                        <p class="p-6 inline-block">Add discount code to <br> checkout page</p>
+                        <img class="  flex rounded-full w-10 h-9 mx-4 my-6 flex-row  relative"
+                            src="img/photo-1633332755192-727a05c4013d.avif">
+                    </div>
+                    <div>
+                        <p class="inline-flex ml-2 text-gray-400">sep 15</p>
+                        <a href="#"> <button
+                                class=" rounded-full bg-green-300 text-green-900 p-2 ml-20 mr-4 mb-4 hover:bg-green-200 ring-2">Feature
+                                request</button></a>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <!-- ----------------------------------------------------end of review col -->
+            <div class=" bg-gray-100 w-120  m-5 rounded overflow-scroll flex-shrink-0">
+                <h2 class="font-bold h-0 p-4">Done</h2>
+
+                <div
+                    class="  flex-col ml-2.5 mt-10 bg-white w-max h-max rounded-md drop-shadow-md hover:drop-shadow-2xl ">
+                    <div class="flex justify-between">
+                        <p class="p-6 inline-block">Add discount code to <br> checkout page</p>
+                        <img class="  flex rounded-full w-10 h-9 mx-4 my-6 flex-row  relative"
+                            src="img/photom1.avif">
+                    </div>
+                    <div>
+                        <p class="inline-flex ml-2 text-gray-400">sep 15</p>
+                        <a href="#"> <button
+                                class=" rounded-full bg-green-300 text-green-900 p-2 ml-20 mr-4 mb-4 hover:bg-green-200 ring-2">Feature
+                                request</button></a>
+                    </div>
+
+                </div>
+                <div
+                    class="  flex-col ml-2.5 mt-10 bg-white w-max h-max rounded-md drop-shadow-md hover:drop-shadow-2xl ">
+                    <div class="flex justify-between">
+                        <p class="p-6 inline-block">Add discount code to <br> checkout page</p>
+                        <img class="  flex rounded-full w-6 h-7 mx-4 my-6 flex-row  relative"
+                            src="img/photo-1633332755192-727a05c4013d.avif">
+                    </div>
+                    <div>
+                        <p class="inline-flex ml-2 text-gray-400">sep 15</p>
+                        <a href="#"> <button
+                                class=" rounded-full bg-green-300 text-green-900 p-2 ml-20 mr-4 mb-4 hover:bg-green-200 ring-2">Feature
+                                request</button></a>
+                    </div>
+
+                </div>
+                <div
+                    class=" flex flex-col ml-2.5 mt-10 bg-white w-max h-max rounded-md drop-shadow-md hover:drop-shadow-2xl ">
+                    <div class="flex justify-between">
+                        <p class="p-6 inline-block">Add discount code to <br> checkout page</p>
+                        <img class="  flex rounded-full w-10 h-9 mx-4 my-6 flex-row  relative"
+                            src="img/photow1.avif">
+                    </div>
+                    <div>
+                        <p class="inline-flex ml-2 text-gray-400">sep 15</p>
+                        <a href="#"> <button
+                                class=" rounded-full bg-green-300 text-green-900 p-2 ml-20 mr-4 mb-4 hover:bg-green-200 ring-2">Feature
+                                request</button></a>
+                    </div>
+
+                </div>
+                <div
+                    class=" flex flex-col ml-2.5 mt-10 bg-white w-max h-max rounded-md drop-shadow-md hover:drop-shadow-2xl ">
+                    <div class="flex justify-between">
+                        <p class="p-6 inline-block">Add discount code to <br> checkout page</p>
+                        <img class="  flex rounded-full w-10 h-9 mx-4 my-6 flex-row  relative"
+                            src="img/photoO1.avif">
+                    </div>
+                    <div>
+                        <p class="inline-flex ml-2 text-gray-400">sep 15</p>
+                        <a href="#"> <button
+                                class=" rounded-full bg-green-300 text-green-900 p-2 ml-20 mr-4 mb-4 hover:bg-green-200 ring-2">Feature
+                                request</button></a>
+                    </div>
+                    
+
+                </div>
+            </div>
         </main>
     </div>
 </body>
