@@ -11,17 +11,453 @@
 </head>
 
 <body>
-    <div>
-        <nav>
+    <div class="flex flex-col w-screen h-screen bg-blue-200 dark:bg-slate-600 dark:text-slate-100">
+        <nav class="flex items-center px-5 h-16 bg-white dark:bg-slate-700">
+            <!-- Logo Link -->
+            <a href="#" class="w-8 h-8 cursor-pointer">
+                <img src="img/logo.svg" alt="logo">
+            </a>
+            <!-- Input Search -->
+            <input class="ml-10 h-10 p-4 rounded-full bg-gray-200 focus:outline-none focus:ring" type="text"
+                name="search" id="search" placeholder="Search for anything">
 
+            <!-- Menu List -->
+            <ul class="flex justify-between ml-10 font-medium">
+                <li>
+                    <a href="#" class="mx-2 text-gray-600 dark:text-gray-200 hover:text-blue-500">Project</a>
+                </li>
+                <li>
+                    <a href="#" class="mx-2 text-gray-600 dark:text-gray-200 hover:text-blue-500">Team</a>
+                </li>
+                <li>
+                    <a href="#" class="mx-2 text-gray-600 dark:text-gray-200 hover:text-blue-500">Activity</a>
+                </li>
+            </ul>
+
+            <!-- New Issue Button -->
+            <a href="#"
+                class="ml-auto flex justify-center bg-green-800 hover:bg-green-600 p-2 text-white rounded-md">New
+                Issue</a>
+
+            <!-- User Profile link -->
+            <a href="#" class="flex justify-center ml-10 w-8 h-8 rounded-md overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                    alt="user-1">
+            </a>
         </nav>
 
-        <header>
-
+        <header class="p-2 m-4">
+            <h1 class="text-2xl font-bold dark:text-slate-200">Team Project Board</h1>
         </header>
 
-        <main>
+        <main class="flex h-full overflow-auto">
+            <!-- Backlog Column -->
+            <div class="m-4 w-72 flex flex-col flex-shrink-0 bg-gray-100 dark:bg-gray-500 rounded-md">
+                <h3 class="p-2 font-medium">Backlog</h3>
+                <div class="overflow-y-auto">
+                    <ul>
+                        <li class="m-2">
+                            <a href="#" class="flex flex-col p-2 bg-white dark:bg-slate-700 rounded-md shadow">
+                                <div class="flex justify-between">
+                                    <p class="text-sm font-medium text-gray-800 dark:text-gray-200"> Add discount code
+                                        to checkout page.
+                                    </p>
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                        alt="user-2" class="h-8 w-8 rounded-full">
+                                </div>
 
+                                <div class="flex justify-between mt-4">
+                                    <p class="text-xs text-gray-600 dark:text-gray-300">Jun 8</p>
+                                    <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-lg">
+                                        Feature
+                                        request
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="m-2">
+                            <a href="#" class="flex flex-col p-2 bg-white dark:bg-slate-700 rounded-md shadow">
+                                <div class="flex justify-between">
+                                    <p class="text-sm font-medium text-gray-800 dark:text-gray-200"> Add discount code
+                                        to checkout page.
+                                    </p>
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                        alt="user-2" class="h-8 w-8 rounded-full">
+                                </div>
+
+                                <div class="flex justify-between mt-4">
+                                    <p class="text-xs text-gray-600 dark:text-gray-300">Jun 8</p>
+                                    <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-lg">
+                                        Feature
+                                        request
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="m-2">
+                            <a href="#" class="flex flex-col p-2 bg-white dark:bg-slate-700 rounded-md shadow">
+                                <div class="flex justify-between">
+                                    <p class="text-sm font-medium text-gray-800 dark:text-gray-200"> Add discount code
+                                        to checkout page.
+                                    </p>
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                        alt="user-2" class="h-8 w-8 rounded-full">
+                                </div>
+
+                                <div class="flex justify-between mt-4">
+                                    <p class="text-xs text-gray-600 dark:text-gray-300">Jun 8</p>
+                                    <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-lg">
+                                        Feature
+                                        request
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="m-2">
+                            <a href="#" class="flex flex-col p-2 bg-white dark:bg-slate-700 rounded-md shadow">
+                                <div class="flex justify-between">
+                                    <p class="text-sm font-medium text-gray-800 dark:text-gray-200"> Add discount code
+                                        to checkout page.
+                                    </p>
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                        alt="user-2" class="h-8 w-8 rounded-full">
+                                </div>
+
+                                <div class="flex justify-between mt-4">
+                                    <p class="text-xs text-gray-600 dark:text-gray-300">Jun 8</p>
+                                    <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-lg">
+                                        Feature
+                                        request
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="m-2">
+                            <a href="#" class="flex flex-col p-2 bg-white dark:bg-slate-700 rounded-md shadow">
+                                <div class="flex justify-between">
+                                    <p class="text-sm font-medium text-gray-800 dark:text-gray-200"> Add discount code
+                                        to checkout page.
+                                    </p>
+                                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                                        alt="user-2" class="h-8 w-8 rounded-full">
+                                </div>
+
+                                <div class="flex justify-between mt-4">
+                                    <p class="text-xs text-gray-600 dark:text-gray-300">Jun 8</p>
+                                    <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-lg">
+                                        Feature
+                                        request
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- In Progress column -->
+            <div class="m-4 w-72 flex flex-col flex-shrink-0 bg-gray-100 dark:bg-gray-500 rounded-md">
+                <h3 class="p-2 font-medium">
+                    In Progress
+                </h3>
+                <div class="overflow-y-auto">
+                    <div class="m-2">
+                        <a href="#" class="flex flex-col p-2 bg-white dark:bg-slate-700 rounded-md shadow">
+                            <div class="flex justify-between">
+                                <p class="text-sm font-medium text-gray-800 dark:text-gray-200"> Add discount code to
+                                    checkout page.
+                                </p>
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between mt-4">
+                                <p class="text-xs text-gray-600 dark:text-gray-300">Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-lg">
+                                    Feature
+                                    request
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="flex flex-col p-2 bg-white dark:bg-slate-700 rounded-md shadow">
+                            <div class="flex justify-between">
+                                <p class="text-sm font-medium text-gray-800 dark:text-gray-200"> Add discount code to
+                                    checkout page.
+                                </p>
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between mt-4">
+                                <p class="text-xs text-gray-600 dark:text-gray-300">Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-lg">
+                                    Feature
+                                    request
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="flex flex-col p-2 bg-white dark:bg-slate-700 rounded-md shadow">
+                            <div class="flex justify-between">
+                                <p class="text-sm font-medium text-gray-800 dark:text-gray-200"> Add discount code to
+                                    checkout page.
+                                </p>
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between mt-4">
+                                <p class="text-xs text-gray-600 dark:text-gray-300">Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-lg">
+                                    Feature
+                                    request
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="flex flex-col p-2 bg-white dark:bg-slate-700 rounded-md shadow">
+                            <div class="flex justify-between">
+                                <p class="text-sm font-medium text-gray-800 dark:text-gray-200"> Add discount code to
+                                    checkout page.
+                                </p>
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between mt-4">
+                                <p class="text-xs text-gray-600 dark:text-gray-300">Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-lg">
+                                    Feature
+                                    request
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="flex flex-col p-2 bg-white dark:bg-slate-700 rounded-md shadow">
+                            <div class="flex justify-between">
+                                <p class="text-sm font-medium text-gray-800 dark:text-gray-200"> Add discount code to
+                                    checkout page.
+                                </p>
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between mt-4">
+                                <p class="text-xs text-gray-600 dark:text-gray-300">Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-lg">
+                                    Feature
+                                    request
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review Column -->
+            <div class="m-4 w-72 flex flex-col flex-shrink-0 bg-gray-100 dark:bg-gray-500 rounded-md">
+                <h3 class="p-2 font-medium">Review</h3>
+                <div class="overflow-y-auto">
+                    <div class="m-2">
+                        <a href="#" class="flex flex-col p-2 bg-white dark:bg-slate-700 rounded-md shadow">
+                            <div class="flex justify-between">
+                                <p class="text-sm font-medium text-gray-800 dark:text-gray-200"> Add discount code to
+                                    checkout page.
+                                </p>
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between mt-4">
+                                <p class="text-xs text-gray-600 dark:text-gray-300">Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-lg">
+                                    Feature
+                                    request
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="flex flex-col p-2 bg-white dark:bg-slate-700 rounded-md shadow">
+                            <div class="flex justify-between">
+                                <p class="text-sm font-medium text-gray-800 dark:text-gray-200"> Add discount code to
+                                    checkout page.
+                                </p>
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between mt-4">
+                                <p class="text-xs text-gray-600 dark:text-gray-300">Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-lg">
+                                    Feature
+                                    request
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="flex flex-col p-2 bg-white dark:bg-slate-700 rounded-md shadow">
+                            <div class="flex justify-between">
+                                <p class="text-sm font-medium text-gray-800 dark:text-gray-200"> Add discount code to
+                                    checkout page.
+                                </p>
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between mt-4">
+                                <p class="text-xs text-gray-600 dark:text-gray-300">Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-lg">
+                                    Feature
+                                    request
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Done Column -->
+            <div class="m-4 w-72 flex flex-col flex-shrink-0 bg-gray-100 dark:bg-gray-500 rounded-md">
+                <h3 class="p-2 font-medium">Done</h3>
+                <div class="overflow-y-auto">
+                    <div class="m-2">
+                        <a href="#" class="flex flex-col p-2 bg-white dark:bg-slate-700 rounded-md shadow">
+                            <div class="flex justify-between">
+                                <p class="text-sm font-medium text-gray-800 dark:text-gray-200"> Add discount code to
+                                    checkout page.
+                                </p>
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between mt-4">
+                                <p class="text-xs text-gray-600 dark:text-gray-300">Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-lg">
+                                    Feature
+                                    request
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="flex flex-col p-2 bg-white dark:bg-slate-700 rounded-md shadow">
+                            <div class="flex justify-between">
+                                <p class="text-sm font-medium text-gray-800 dark:text-gray-200"> Add discount code to
+                                    checkout page.
+                                </p>
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between mt-4">
+                                <p class="text-xs text-gray-600 dark:text-gray-300">Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-lg">
+                                    Feature
+                                    request
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="flex flex-col p-2 bg-white dark:bg-slate-700 rounded-md shadow">
+                            <div class="flex justify-between">
+                                <p class="text-sm font-medium text-gray-800 dark:text-gray-200"> Add discount code to
+                                    checkout page.
+                                </p>
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between mt-4">
+                                <p class="text-xs text-gray-600 dark:text-gray-300">Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-lg">
+                                    Feature
+                                    request
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="flex flex-col p-2 bg-white dark:bg-slate-700 rounded-md shadow">
+                            <div class="flex justify-between">
+                                <p class="text-sm font-medium text-gray-800 dark:text-gray-200"> Add discount code to
+                                    checkout page.
+                                </p>
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between mt-4">
+                                <p class="text-xs text-gray-600 dark:text-gray-300">Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-lg">
+                                    Feature
+                                    request
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="flex flex-col p-2 bg-white dark:bg-slate-700 rounded-md shadow">
+                            <div class="flex justify-between">
+                                <p class="text-sm font-medium text-gray-800 dark:text-gray-200"> Add discount code to
+                                    checkout page.
+                                </p>
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between mt-4">
+                                <p class="text-xs text-gray-600 dark:text-gray-300">Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-lg">
+                                    Feature
+                                    request
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="flex flex-col p-2 bg-white dark:bg-slate-700 rounded-md shadow">
+                            <div class="flex justify-between">
+                                <p class="text-sm font-medium text-gray-800 dark:text-gray-200"> Add discount code to
+                                    checkout page.
+                                </p>
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between mt-4">
+                                <p class="text-xs text-gray-600 dark:text-gray-300">Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-lg">
+                                    Feature
+                                    request
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
 </body>
