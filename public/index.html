@@ -11,19 +11,451 @@
 </head>
 
 <body>
-    <div>
-        <nav>
+    <div class="flex flex-col w-screen h-screen bg-blue-200">
+        <nav class="  h-14 flex items-center px-5 bg-white">
+            <a href="#" class="w-8 h-8 cursor-pointer">
+                <img src="img/logo.svg" alt="logo">
+            </a>
+            <input class="ml-10 h-10 p-4 rounded-full bg-gray-200 focus:outline-none focus:ring" type="text"
+                name="search" id="search" placeholder="serach for anythying">
+            <ul class="flex justify-between ml-10 font-medium">
+                <li>
+                    <a href="#" class=" mx-2 text-blue-600">Project</a>
+                </li>
+                <li>
+                    <a href="#" class=" mx-2 text-gray-600 hover:text-blue-600">Team</a>
+                </li>
+                <li>
+                    <a href="#" class="mx-2 text-gray-600 hover:text-blue-600">Activity</a>
+                </li>
+            </ul>
+            <botton class="ml-auto flex-justify-center bg-green-800 hover:bg-green-600 p-2 text-white rounded-md">New
+            </botton>
+            <a href="#" class="w-8 h-8 flex-justify-center ml-8 rounded-full overflow-hidden">
 
+                <img src=" https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                    alt="user-1">
+            </a>
         </nav>
-
-        <header>
-
+        <header class="h-7 m-5">
+            <h1 class="text-2xl font-bold"> Task Board</h1>
         </header>
 
-        <main>
+        <main class="flex h-full overflow-auto ">
+
+            <div class="bg-white m-7 rounded-md flex flex-col flex-shrink-0 w-1/6 h-screen p-2 overflow-scroll">
+                <h3 class="p-2 fixed bg-white">Backlog</h3>
+                <div class="poverflow-auto">
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="bg-white m-7 rounded-md w-1/6 h-screen p-2 overflow-scroll">
+                <h3 class="p-2 fixed bg-white"> In progress</h3>
+                <div class="poverflow-auto">
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="bg-white m-7 rounded-md w-1/6 h-screen p-2 overflow-scroll">
+                <h3 class="p-2 fixed bg-white">Review </h3>
+                <div class="poverflow-auto">
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="bg-white m-7 rounded-md w-1/6 h-screen p-2 overflow-scroll">
+                <h3 class="p-2 fixed bg-white">Done</h3>
+                <div class="poverflow-auto">
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="m-2">
+                        <a href="#" class="p-2 bg-white rounded-md shodow">
+                            <div class="flex justify-between">
+                                <p>Add discount code to cheackout page. </p>
+                                <img src=" https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=144&h=144&q=80"
+                                    alt="user-2" class="h-8 w-8 rounded-full">
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p class="text-xs text-gray-600"> Jun 8</p>
+                                <div class="text-xs bg-teal-100 p-2 text-teal-500 font-semibold rounded-full">Feature
+                                    request</div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+           
 
         </main>
-    </div>
+ 
 </body>
 
 </html>
